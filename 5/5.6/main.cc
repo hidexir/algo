@@ -23,6 +23,8 @@ long long rec(int i) {
 
   if(i > 1) chmin(res, rec(i - 2) + abs(h[i] - h[i - 2]));
 
+  cout <<"いったん" <<res << endl;
+
   return dp[i] = res;
 }
 
